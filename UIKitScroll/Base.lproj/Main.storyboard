@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Why-yi-4Qz">
-                                        <rect key="frame" x="16" y="20" width="131" height="32"/>
+                                        <rect key="frame" x="16" y="20" width="343" height="32"/>
                                         <segments>
                                             <segment title="First"/>
                                             <segment title="Second"/>
@@ -32,7 +32,7 @@
                                         </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBv-bU-EJL">
-                                        <rect key="frame" x="167" y="76" width="41.5" height="20.5"/>
+                                        <rect key="frame" x="16" y="76" width="343" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -76,7 +76,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="O9i-If-UnY">
-                                        <rect key="frame" x="28" y="455" width="320" height="216"/>
+                                        <rect key="frame" x="27.5" y="455" width="320" height="216"/>
                                         <connections>
                                             <action selector="datePickerAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="MaP-nG-txD"/>
                                         </connections>
@@ -92,6 +92,9 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WYm-ei-QWc">
                                                 <rect key="frame" x="294" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ase-FL-Sbf"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -122,11 +125,11 @@
                                     <constraint firstItem="O9i-If-UnY" firstAttribute="centerX" secondItem="3S6-F0-lTf" secondAttribute="centerX" id="Am8-h8-7Pv"/>
                                     <constraint firstItem="h6y-Lj-SRv" firstAttribute="trailing" secondItem="S0S-4s-Chm" secondAttribute="trailing" constant="35" id="BPb-Dc-mab"/>
                                     <constraint firstItem="MEQ-YM-POw" firstAttribute="centerX" secondItem="3S6-F0-lTf" secondAttribute="centerX" id="Byg-Gb-Min"/>
-                                    <constraint firstItem="YBv-bU-EJL" firstAttribute="centerX" secondItem="3S6-F0-lTf" secondAttribute="centerX" id="EY6-sh-Gvu"/>
                                     <constraint firstItem="h6y-Lj-SRv" firstAttribute="trailing" secondItem="sAB-Em-Ggk" secondAttribute="trailing" constant="16" id="FkQ-JS-oGF"/>
                                     <constraint firstItem="dgr-Wn-vA3" firstAttribute="top" secondItem="mlz-EN-r3h" secondAttribute="bottom" constant="25" id="Frf-ky-wzD"/>
                                     <constraint firstItem="Xqn-To-NKV" firstAttribute="centerX" secondItem="3S6-F0-lTf" secondAttribute="centerX" id="HB4-np-gNe"/>
                                     <constraint firstItem="S0S-4s-Chm" firstAttribute="leading" secondItem="h6y-Lj-SRv" secondAttribute="leading" constant="35" id="IBq-RC-ZUt"/>
+                                    <constraint firstItem="h6y-Lj-SRv" firstAttribute="trailing" secondItem="YBv-bU-EJL" secondAttribute="trailing" constant="16" id="IMW-0q-HFN"/>
                                     <constraint firstItem="sEH-tI-za1" firstAttribute="leading" secondItem="h6y-Lj-SRv" secondAttribute="leading" constant="16" id="IV2-9a-9Rf"/>
                                     <constraint firstItem="aqE-Ej-Gna" firstAttribute="top" secondItem="oLS-nq-Hnu" secondAttribute="bottom" constant="25" id="KxM-mj-ngc"/>
                                     <constraint firstItem="O9i-If-UnY" firstAttribute="top" secondItem="aqE-Ej-Gna" secondAttribute="bottom" constant="25" id="MZo-ZW-haQ"/>
@@ -138,6 +141,8 @@
                                     <constraint firstItem="Xqn-To-NKV" firstAttribute="top" secondItem="dgr-Wn-vA3" secondAttribute="bottom" constant="25" id="cLh-NI-Rye"/>
                                     <constraint firstItem="h6y-Lj-SRv" firstAttribute="trailing" secondItem="oLS-nq-Hnu" secondAttribute="trailing" constant="16" id="cp2-Oa-rdx"/>
                                     <constraint firstItem="sAB-Em-Ggk" firstAttribute="leading" secondItem="h6y-Lj-SRv" secondAttribute="leading" constant="16" id="cpL-7h-KsG"/>
+                                    <constraint firstItem="YBv-bU-EJL" firstAttribute="leading" secondItem="h6y-Lj-SRv" secondAttribute="leading" constant="16" id="fSO-bO-2Q1"/>
+                                    <constraint firstItem="Why-yi-4Qz" firstAttribute="centerX" secondItem="3S6-F0-lTf" secondAttribute="centerX" id="hMz-2M-07A"/>
                                     <constraint firstItem="mlz-EN-r3h" firstAttribute="top" secondItem="O9i-If-UnY" secondAttribute="bottom" constant="25" id="jfK-qO-3Ua"/>
                                     <constraint firstAttribute="bottom" secondItem="Xqn-To-NKV" secondAttribute="bottom" constant="67.5" id="qTe-KJ-80n"/>
                                     <constraint firstItem="Why-yi-4Qz" firstAttribute="top" secondItem="3S6-F0-lTf" secondAttribute="top" constant="20" id="rsW-Ue-Vl4"/>
@@ -162,17 +167,13 @@
                     <connections>
                         <outlet property="button" destination="MEQ-YM-POw" id="fV8-XL-cjw"/>
                         <outlet property="dateLabel" destination="aqE-Ej-Gna" id="Wlb-fQ-blS"/>
-                        <outlet property="datePicker" destination="O9i-If-UnY" id="6MR-aY-kEB"/>
-                        <outlet property="hugsLabel" destination="Xqn-To-NKV" id="6Xd-4E-HCc"/>
-                        <outlet property="loveLabel" destination="dgr-Wn-vA3" id="rPq-XB-Dx8"/>
-                        <outlet property="onOffLabel" destination="lwi-8K-esk" id="yBP-lS-6wO"/>
+                        <outlet property="datePicker" destination="O9i-If-UnY" id="SSh-X3-M7H"/>
+                        <outlet property="scrollView" destination="3S6-F0-lTf" id="Y1W-aK-R6C"/>
                         <outlet property="segmentedControll" destination="Why-yi-4Qz" id="6Kb-zK-FCK"/>
                         <outlet property="slider" destination="sAB-Em-Ggk" id="nd0-QJ-d5g"/>
                         <outlet property="stepper" destination="sEH-tI-za1" id="MKQ-S6-xcn"/>
-                        <outlet property="switcher" destination="WYm-ei-QWc" id="0If-u3-dXt"/>
                         <outlet property="textField" destination="S0S-4s-Chm" id="UFv-Il-wbX"/>
                         <outlet property="textLabel" destination="YBv-bU-EJL" id="dgP-Y2-bvr"/>
-                        <outlet property="thanksLabel" destination="mlz-EN-r3h" id="hHF-RW-6P3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
